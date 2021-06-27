@@ -8,7 +8,7 @@ for file in os.listdir(home):
         x = (file.split("."))
         if(len(x) > 1):
             # tenemos la extensión
-            extension = (x[1])
+            extension = (x[-1])
             nombreFichero = os.path.join("", file)
             print(nombreFichero)
             print(extension)
